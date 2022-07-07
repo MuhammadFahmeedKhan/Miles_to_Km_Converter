@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image:linear-gradient(to left, rgba(244,208,63,0.3),rgba(0,0,0,0.8)),url("../Images/alex-ramon-dTXOV27Rud8-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.container{
+    width: 35%;
+    padding-inline:2rem;
+    padding-block:2rem;
+    background-color:rgba(0,0,0,0.5);
+    border-radius: 1rem;
+    box-shadow: 2px 2px 10px rgba(244,208,63,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid #F4D03F;
+}
+.container h1{
+    color:#F4D03F;
+
+}
+.container .values{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-block:1rem;
+}
+.container .values h4{
+    color: #ECF0F1;
+    font-size: 1.3rem;
+}
+.container .values input{
+    padding: .8rem 3rem;
+    caret-color: #F4D03F;
+    font-size: 1rem;
+}
+.container .values input::placeholder{
+    text-align: center;
+}
+.container .values input:focus{
+    outline: none;
+}
+.container .values h5{
+    color:#C0392B;
+    font-size: 1rem;
+}
+.container button{
+    padding: .8rem 3rem;
+    margin-top: .7rem;
+    cursor: pointer;
+    background:transparent;
+    border: 1px solid #F4D03F;
+    color: #F4D03F;
+    text-transform: uppercase;
+    font-size: .7rem;
+    font-weight: 500;
+    transition: all .5s linear;
+}
+.container button:hover{
+    background-color: #F4D03F;
+    color: #000;
+}
+
+@media(max-width:786px){
+    .container{
+        width: 40%;
+        padding-inline:1rem;
+        padding-block:1rem;
+    }
+    .container h1{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .container .values h5{
+        font-size: .8rem;
+    }
+    .container .values h4{
+    font-size: 1rem;
+    }
+    .container .values input{
+        padding: .5rem 1.4rem;
+    }
+    .container button{
+        padding: .7rem 1.3rem;
+        font-size: .6rem;
+    }
+}
+
+@media(max-width:420px){
+    .container{
+        width: 60%;
+        padding-inline:1rem;
+        padding-block:1rem;
+    }
+    .container h1{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    .container .values h5{
+        font-size: .6rem;
+    }
+    .container .values h4{
+    font-size: .8rem;
+    }
+    .container .values input{
+        padding: .5rem 1.4rem;
+    }
+    .container button{
+        padding: .5rem 1rem;
+        font-size: .6rem;
+    }
+    .container .values input::placeholder{
+        font-size: .7rem;
+    }
+}

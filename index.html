@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miles to KM Converter</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Miles to KM Converter</h1>
+        
+        <div class="values">
+        <h4>Miles</h4>
+        <input type="number" placeholder="Enter Miles Here" id="miles">
+        <h5 id="error"></h5>
+        </div>
+        
+        <div class="values">
+        <h4>KM</h4>
+        <input type="text" id="km">
+        </div>
+
+        <button onclick="convert()"><i class="fa-solid fa-car-side"></i> Convert</button>
+    </div>
+    <script src="Javascript/script.js"></script>
+</body>
+</html>
